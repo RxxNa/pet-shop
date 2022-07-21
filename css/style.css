@@ -1,0 +1,94 @@
+/*
+COLOR
+================================================ */
+/*
+GENERAL STYLING
+================================================ */
+html {
+  font-size: 100%;
+}
+
+body {
+  padding-top: 104px;
+  box-sizing: border-box;
+  font-size: 1.125rem;
+  font-family: "Kosugi", sans-serif;
+  color: #2C2C2C;
+}
+
+/*
+COMMON
+================================================ */
+p {
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Kosugi", sans-serif;
+}
+
+.wrapper {
+  padding: 0 110px;
+  margin: 0 auto;
+}
+
+/*
+HEADER
+================================================ */
+header {
+  width: 100%;
+  height: 104px;
+  background: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding: 47px 56px 23px 56px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header img {
+  padding-right: 64px;
+}
+.header nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.header nav ul li {
+  padding-right: 56px;
+}
+.header nav ul li a {
+  color: #2C2C2C;
+}
+.header nav ul li a:hover {
+  color: #FF5F32;
+}
+
+/*
+HEADER
+================================================ */
+.hero {
+  background-color: red;
+  height: 900px;
+}
+/*# sourceMappingURL=style.css.map */
