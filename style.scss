@@ -1,17 +1,22 @@
 /*
 COLOR
 ================================================ */
+$Body: #FAFAFA;
 $Black: #2C2C2C;
 $Orange: #FF5F32;
+$Gray: #5D5D5D;
+$White: #FFFFFF;
 
 /*
 GENERAL STYLING
 ================================================ */
 html {
   font-size: 100%;
+  width: 1440px;
 }
 
 body {
+  background-color: $Body;
   padding-top: 104px;
   box-sizing: border-box;
   font-size: 1.125rem;
@@ -49,22 +54,43 @@ h3 {
   margin: 0 auto;
 }
 
+.title {
+  text-align: center;
+
+  h3 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 12px;
+    color: $Orange;
+    line-height: 4;
+  }
+}
+
 /*
 HEADER
 ================================================ */
-header {
+.header {
   width: 100%;
   height: 104px;
-  background: rgb(255, 255, 255, 0.8);
   box-sizing: border-box;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   align-items: center;
+  transition: background-color .5s, color .5s;
+  z-index: 2;
+
 }
 
-.header {
+.change-color {
+  background: rgb(255, 255, 255, 0.8);
+}
+
+
+.header_inner {
   padding: 47px 56px 23px 56px;
   display: flex;
   justify-content: flex-start;
@@ -93,9 +119,134 @@ header {
 }
 
 /*
-HEADER
+HERO
 ================================================ */
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-size: cover;
+  width: 1080px;
+  height: 724px;
+  background-image: url(../images/home/mv.png);
+  z-index: -1;
+}
+
 .hero {
-  background-color: red;
-  height: 900px;
+  margin-top: 13%;
+
+  .hero-text {
+    h1 {
+      font-size: 48px;
+      letter-spacing: 2.4px;
+    }
+
+    p {
+      color: $Gray;
+      font-size: 16px;
+      line-height: 2;
+    }
+  }
+}
+
+.btn {
+  margin-top: 40px;
+}
+
+.btn1 {
+  margin-top: 50px;
+  border-radius: 30px;
+  background-color: $Orange;
+  color: $White;
+  padding: 20px 30px;
+  transition: all .3s ease;
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.hero-news {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .7);
+  padding: 45px 30px;
+  border-radius: 16px;
+
+  h3 {
+    font-size: 18px;
+    color: $Orange;
+  }
+
+  ul {
+    margin-left: 10px;
+
+    li {
+      margin-bottom: 16px;
+
+      a {
+        display: flex;
+        align-items: center;
+      }
+
+      time {
+        color: $Gray;
+        font-size: 14px;
+        margin-right: 10px;
+      }
+
+      a p {
+        font-size: 16px;
+        color: $Black;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+    }
+
+  }
+}
+
+/*
+FIND
+================================================ */
+.find {
+  margin-top: 60px;
+}
+
+.find_list {
+  margin-top: 30px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+
+    li {
+      width: 250px;
+      height: 350px;
+      margin-bottom: 50px;
+      transition: all .3s ease;
+
+    &:hover {
+      opacity: .5;
+    }
+
+      img {
+        margin-bottom: 26px;
+      }
+
+      h3 {
+        font-size: 18px;
+        color: $Black;
+        text-align: center;
+        padding: 0 55px;
+      }
+    }
+  }
 }
