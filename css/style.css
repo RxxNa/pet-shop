@@ -10,7 +10,6 @@ html {
 }
 
 body {
-  background-color: #FAFAFA;
   padding-top: 104px;
   box-sizing: border-box;
   font-size: 1.125rem;
@@ -44,7 +43,7 @@ h3 {
 }
 
 .wrapper {
-  padding: 0 110px;
+  padding: 0 170px;
   margin: 0 auto;
 }
 
@@ -58,6 +57,10 @@ h3 {
   font-size: 12px;
   color: #FF5F32;
   line-height: 4;
+}
+
+.btn2_2 {
+  margin-top: 66px;
 }
 
 /*
@@ -101,6 +104,7 @@ HEADER
 }
 .header_inner nav ul li a:hover {
   color: #FF5F32;
+  transition: all 0.3s;
 }
 
 /*
@@ -118,7 +122,7 @@ HERO
 }
 
 .hero {
-  margin-top: 13%;
+  padding-top: 13%;
 }
 .hero .hero-text h1 {
   font-size: 48px;
@@ -199,7 +203,7 @@ FIND
   flex-wrap: wrap;
 }
 .find_list ul li {
-  width: 250px;
+  width: 225px;
   height: 350px;
   margin-bottom: 50px;
   transition: all 0.3s ease;
@@ -214,6 +218,301 @@ FIND
   font-size: 18px;
   color: #2C2C2C;
   text-align: center;
-  padding: 0 55px;
+  padding: 0 45px;
+}
+
+.btn2 {
+  display: flex;
+  justify-content: center;
+}
+.btn2 a {
+  position: relative;
+  font-size: 18px;
+  text-align: center;
+  color: #FF5F32;
+  border-radius: 30px;
+  border: 1px solid #FF5F32;
+  padding: 15px 100px;
+  transition: ease 0.3s;
+}
+.btn2 a:hover {
+  opacity: 0.5;
+}
+.btn2 a::after {
+  position: absolute;
+  content: "";
+  top: 42%;
+  right: 13px;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #FF5F32;
+  border-right: 1px solid #FF5F32;
+  transform: rotate(45deg);
+}
+
+/*
+FIND-SHOP
+================================================ */
+.find-shop {
+  margin-top: 96px;
+  padding-bottom: 510px;
+}
+
+.store-content {
+  position: relative;
+  margin-top: 30px;
+}
+
+.store-map1 {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 300px;
+  width: 184px;
+  height: 136px;
+  background-color: #FFECC6;
+  border-radius: 24px;
+  z-index: -2;
+}
+
+.store-map2 {
+  position: absolute;
+  content: "";
+  top: 168px;
+  right: 330px;
+  width: 190px;
+  height: 320px;
+  background-color: #FFECC6;
+  border-radius: 24px;
+  z-index: -2;
+}
+
+.store-map3 {
+  position: absolute;
+  content: "";
+  top: 250px;
+  right: 490px;
+  width: 235px;
+  height: 105px;
+  background-color: #FFECC6;
+  border-radius: 24px;
+  z-index: -2;
+}
+
+.store-map4 {
+  position: absolute;
+  content: "";
+  top: 380px;
+  right: 530px;
+  width: 195px;
+  height: 105px;
+  background-color: #FFECC6;
+  border-radius: 24px;
+  z-index: -2;
+}
+
+.store-map5 {
+  position: absolute;
+  content: "";
+  top: 249px;
+  left: 234px;
+  width: 112px;
+  height: 238px;
+  background-color: #FFECC6;
+  border-radius: 24px;
+  z-index: -2;
+}
+
+.btn3 {
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #FF5F32;
+  border-radius: 24px;
+  border: 1px solid #FFFFFF;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 13px 34px;
+  transition: all 0.3s;
+}
+.btn3:hover {
+  opacity: 0.5;
+}
+
+.store-detail {
+  position: relative;
+}
+
+.sapporo {
+  position: absolute;
+  top: 90px;
+  right: 240px;
+}
+
+.miyagi {
+  position: absolute;
+  top: 250px;
+  right: 240px;
+}
+
+.sinjuku {
+  position: absolute;
+  top: 475px;
+  right: 240px;
+}
+
+.ishikawa {
+  position: absolute;
+  top: 250px;
+  right: 475px;
+}
+
+.umeda {
+  position: absolute;
+  top: 350px;
+  right: 475px;
+}
+
+.shizuoka {
+  position: absolute;
+  top: 475px;
+  right: 475px;
+}
+
+.fukuoka {
+  position: absolute;
+  top: 250px;
+  right: 675px;
+}
+
+.kagosima {
+  position: absolute;
+  top: 475px;
+  right: 785px;
+}
+
+/*
+BLOG
+================================================ */
+.blog {
+  margin-top: 96px;
+  background-color: #FAFAFA;
+  padding-bottom: 96px;
+}
+.blog .title {
+  padding-top: 96px;
+}
+
+.blog-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog-list li {
+  width: 208px;
+  transition: all 0.3s;
+}
+.blog-list li img {
+  width: 208px;
+  height: 208px;
+  border-radius: 24px;
+}
+.blog-list li p {
+  margin-top: 28px;
+  font-size: 16px;
+  color: #2C2C2C;
+}
+.blog-list li time {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #5D5D5D;
+}
+.blog-list li:hover {
+  opacity: 0.5;
+}
+
+/*
+ABOUT
+================================================ */
+.about {
+  padding-top: 96px;
+  padding-bottom: 420px;
+  background-color: #F7F7F9;
+}
+.about .title {
+  padding-top: 96px;
+}
+
+.about-content {
+  position: relative;
+}
+
+.about-item {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: -110px;
+}
+
+.about-bg {
+  width: 112%;
+}
+
+.about-text {
+  margin-left: 10px;
+}
+.about-text h2 {
+  font-size: 20px;
+}
+.about-text p {
+  font-size: 16px;
+  color: #5D5D5D;
+  margin-top: 13px;
+  padding-right: 165px;
+}
+
+/*
+footer
+================================================ */
+.solid {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #F7B500;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer img {
+  padding-right: 80px;
+}
+.footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer ul li {
+  padding-right: 52px;
+  transition: all 0.3s;
+}
+.footer ul li a {
+  color: #2C2C2C;
+  font-size: 14px;
+}
+.footer ul li a:hover {
+  color: #FF5F32;
+}
+
+footer p {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  color: #5D5D5D;
 }
 /*# sourceMappingURL=style.css.map */
