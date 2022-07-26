@@ -914,3 +914,110 @@ find a cat
     }
   }
 }
+
+/* shop-related */
+.shop-related_item {
+  position: relative;
+  margin: 125px 0;
+
+  &:nth-last-of-type(1) {
+    margin: 56px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: #CDCDCD;
+    width: 1100px;
+    height: 1px;
+    top: -56px;
+    left: 0;
+  }
+
+  ul {
+    display: flex;
+    padding: 10px 30px;
+
+    img {
+      width: 400px;
+      border-radius: 24px;
+    }
+  }
+
+  h3 {
+    color: $Black;
+    font-size: 20px;
+
+    small {
+      color: $Gray;
+      font-size: 14px;
+    }
+  }
+}
+
+.pager .pagination {
+  text-align: center;
+
+  li {
+    display: inline;
+    margin: 0 2px;
+    padding: 0;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+
+    a {
+      vertical-align: middle;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80%;
+      height: 80%;
+      text-align: center;
+      display: table;
+      color: #9B9B9B;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $Black;
+      }
+
+      &.active {
+        color: $Black;
+        border-radius: 50px;
+        border: 1px solid $Gray;
+      }
+
+      span {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.pager {
+  position: relative;
+  margin-bottom: 56px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: #CDCDCD;
+    width: 1100px;
+    height: 1px;
+    bottom: -56px;
+    left: 0;
+  }
+}
+
+.related_shinjuku::before,
+.related_shinjuku::after {
+  content: none;
+}
+
+.shop-related_btn {
+  margin-top: 30px;
+}
