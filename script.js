@@ -5,3 +5,5 @@ jQuery(window).on('scroll', function() {
     jQuery('.header').removeClass('change-color')
   }
 });
+
+new LuminousGallery(document.querySelectorAll(".gallery"));

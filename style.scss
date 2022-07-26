@@ -74,6 +74,44 @@ h3 {
   margin-top: 66px;
 }
 
+/* breadcrumb */
+.breadcrumb {
+  margin-top: 12px;
+  margin-bottom: 50px;
+
+  ul {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  li {
+    font-size: 12px;
+    color: $Gray;
+
+    a {
+      color: $Gray;
+      transition: all .3s;
+
+      &:hover {
+        color: $Orange;
+      }
+    }
+
+    &:after {
+      content: ">";
+      margin: 0 0.5em;
+    }
+
+    &:last-of-type:after {
+      content: "";
+      margin: 0;
+    }
+  }
+}
+
 /*
 HEADER
 ================================================ */
@@ -220,11 +258,11 @@ HERO
 /*
 FIND
 ================================================ */
-.find {
+.home_find {
   margin-top: 60px;
 }
 
-.find_list {
+.home_find_list {
   margin-top: 30px;
 
   ul {
@@ -292,7 +330,7 @@ FIND
 /*
 FIND-SHOP
 ================================================ */
-.find-shop {
+.home_find-shop {
   margin-top: 96px;
   padding-bottom: 510px;
 }
@@ -550,11 +588,11 @@ footer
 
     li {
       padding-right: 52px;
-      transition: all .3s;
 
       a {
         color: $Black;
         font-size: 14px;
+        transition: all .3s;
 
         &:hover {
           color: $Orange;
@@ -569,4 +607,151 @@ footer p {
   display: flex;
   justify-content: center;
   color: $Gray;
+}
+
+/*
+find a cat
+================================================ */
+.find-list_4colum {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  li {
+    width: 184px;
+    margin: 20px;
+    transition: all .3s;
+
+    a {
+      color: $Black;
+    }
+
+    p {
+      padding: 0px 22px;
+      text-align: center;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.find-list_3colum {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all .3s;
+
+  li {
+    width: 280px;
+    margin-bottom: 44px;
+    transition: all .3s;
+
+    a {
+      display: flex;
+      justify-content: space-around;
+      color: $Black;
+    }
+
+    img {
+      width: 100px;
+    }
+
+    p {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.btn2_find {
+  margin-top: 73px;
+  margin-bottom: 104px;
+}
+
+/* find a cat detail */
+.find-detail dl {
+  display: flex;
+  justify-content: flex-start;
+
+  dt {
+    width: 584px;
+    margin-right: 40px;
+
+    img {
+      border-radius: 24px;
+    }
+  }
+
+  dd {
+    margin-top: 25px;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 22px;
+
+    }
+  }
+
+  table {
+    border-spacing: 0px 20px;
+
+    th {
+      text-align: start;
+      padding-right: 20px;
+      font-size: 14px;
+      color: $Gray;
+
+      tr {
+        padding: 5px 0;
+      }
+
+      h3 {
+        font-size: 20px;
+        color: $Black;
+
+        .gray {
+          color: $Gray;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.cat-detail {
+  margin-top: 26px;
+
+  a {
+    color: $Black;
+    transition: all .3s;
+
+    &:hover {
+      color: $Orange;
+    }
+  }
+}
+
+
+.cat-detail_img {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 54px;
+
+  li {
+    margin-right: 17px;
+  }
+
+  img {
+    width: 134px;
+    border-radius: 10px;
+  }
 }

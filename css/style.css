@@ -63,6 +63,36 @@ h3 {
   margin-top: 66px;
 }
 
+/* breadcrumb */
+.breadcrumb {
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+.breadcrumb ul {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+.breadcrumb li {
+  font-size: 12px;
+  color: #5D5D5D;
+}
+.breadcrumb li a {
+  color: #5D5D5D;
+  transition: all 0.3s;
+}
+.breadcrumb li a:hover {
+  color: #FF5F32;
+}
+.breadcrumb li:after {
+  content: ">";
+  margin: 0 0.5em;
+}
+.breadcrumb li:last-of-type:after {
+  content: "";
+  margin: 0;
+}
+
 /*
 HEADER
 ================================================ */
@@ -189,32 +219,32 @@ HERO
 /*
 FIND
 ================================================ */
-.find {
+.home_find {
   margin-top: 60px;
 }
 
-.find_list {
+.home_find_list {
   margin-top: 30px;
 }
-.find_list ul {
+.home_find_list ul {
   display: flex;
   justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
 }
-.find_list ul li {
+.home_find_list ul li {
   width: 225px;
   height: 350px;
   margin-bottom: 50px;
   transition: all 0.3s ease;
 }
-.find_list ul li:hover {
+.home_find_list ul li:hover {
   opacity: 0.5;
 }
-.find_list ul li img {
+.home_find_list ul li img {
   margin-bottom: 26px;
 }
-.find_list ul li h3 {
+.home_find_list ul li h3 {
   font-size: 18px;
   color: #2C2C2C;
   text-align: center;
@@ -253,7 +283,7 @@ FIND
 /*
 FIND-SHOP
 ================================================ */
-.find-shop {
+.home_find-shop {
   margin-top: 96px;
   padding-bottom: 510px;
 }
@@ -499,11 +529,11 @@ footer
 }
 .footer ul li {
   padding-right: 52px;
-  transition: all 0.3s;
 }
 .footer ul li a {
   color: #2C2C2C;
   font-size: 14px;
+  transition: all 0.3s;
 }
 .footer ul li a:hover {
   color: #FF5F32;
@@ -514,5 +544,128 @@ footer p {
   display: flex;
   justify-content: center;
   color: #5D5D5D;
+}
+
+/*
+find a cat
+================================================ */
+.find-list_4colum {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.find-list_4colum li {
+  width: 184px;
+  margin: 20px;
+  transition: all 0.3s;
+}
+.find-list_4colum li a {
+  color: #2C2C2C;
+}
+.find-list_4colum li p {
+  padding: 0px 22px;
+  text-align: center;
+}
+.find-list_4colum li:hover {
+  opacity: 0.5;
+}
+
+.find-list_3colum {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 0.3s;
+}
+.find-list_3colum li {
+  width: 280px;
+  margin-bottom: 44px;
+  transition: all 0.3s;
+}
+.find-list_3colum li a {
+  display: flex;
+  justify-content: space-around;
+  color: #2C2C2C;
+}
+.find-list_3colum li img {
+  width: 100px;
+}
+.find-list_3colum li p {
+  font-size: 16px;
+  padding: 0 10px;
+}
+.find-list_3colum li:hover {
+  opacity: 0.5;
+}
+
+.btn2_find {
+  margin-top: 73px;
+  margin-bottom: 104px;
+}
+
+/* find a cat detail */
+.find-detail dl {
+  display: flex;
+  justify-content: flex-start;
+}
+.find-detail dl dt {
+  width: 584px;
+  margin-right: 40px;
+}
+.find-detail dl dt img {
+  border-radius: 24px;
+}
+.find-detail dl dd {
+  margin-top: 25px;
+}
+.find-detail dl dd h2 {
+  font-size: 28px;
+  margin-bottom: 22px;
+}
+.find-detail dl table {
+  border-spacing: 0px 20px;
+}
+.find-detail dl table th {
+  text-align: start;
+  padding-right: 20px;
+  font-size: 14px;
+  color: #5D5D5D;
+}
+.find-detail dl table th tr {
+  padding: 5px 0;
+}
+.find-detail dl table th h3 {
+  font-size: 20px;
+  color: #2C2C2C;
+}
+.find-detail dl table th h3 .gray {
+  color: #5D5D5D;
+  font-size: 14px;
+}
+
+.cat-detail {
+  margin-top: 26px;
+}
+.cat-detail a {
+  color: #2C2C2C;
+  transition: all 0.3s;
+}
+.cat-detail a:hover {
+  color: #FF5F32;
+}
+
+.cat-detail_img {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 54px;
+}
+.cat-detail_img li {
+  margin-right: 17px;
+}
+.cat-detail_img img {
+  width: 134px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */
