@@ -727,6 +727,15 @@ find a cat
   }
 }
 
+.lum-lightbox.lum-open {
+  z-index: 4;
+}
+
+.lim-lightbox-inner img {
+  max-width: 120vw;
+  max-height: 80vh;
+}
+
 .cat-detail {
   margin-top: 26px;
 
@@ -1029,6 +1038,11 @@ find a cat
 
 .main-post_content {
   position: relative;
+  transition: all .3s;
+
+  &:hover {
+    opacity: .5;
+  }
 
   img {
     border-radius: 24px;
@@ -1049,6 +1063,7 @@ find a cat
   h2 {
     font-size: 28px;
     margin-bottom: 20px;
+    color: $Black;
   }
 
   p {
@@ -1132,6 +1147,11 @@ find a cat
   margin-top: 48px;
   height: 226px;
   position: relative;
+  transition: all .3s;
+
+  &:hover {
+    opacity: .5;
+  }
 
   &::after {
     content: "";
@@ -1173,6 +1193,7 @@ find a cat
   }
 
   h3 {
+    color: $Black;
     margin-top: 12px;
     font-size: 20px;
   }
@@ -1192,6 +1213,11 @@ find a cat
   height: 311px;
   margin-bottom: 72px;
   position: relative;
+  transition: all .3s;
+
+  &:hover {
+    opacity: .5;
+  }
 
   &::after {
     content: "";
@@ -1220,6 +1246,7 @@ find a cat
       }
 
       h3 {
+        color: $Black;
         margin-top: 24px;
         margin-bottom: 13px;
       }
@@ -1258,6 +1285,10 @@ find a cat
 }
 
 /* blog-detail */
+.blog-detail>.main-post_content:hover {
+  opacity: 1;
+}
+
 .blog-detail>.aside-bg {
   height: 3230px;
 }

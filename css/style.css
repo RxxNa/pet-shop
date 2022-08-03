@@ -645,6 +645,15 @@ find a cat
   font-size: 14px;
 }
 
+.lum-lightbox.lum-open {
+  z-index: 4;
+}
+
+.lim-lightbox-inner img {
+  max-width: 120vw;
+  max-height: 80vh;
+}
+
 .cat-detail {
   margin-top: 26px;
 }
@@ -910,6 +919,10 @@ find a cat
 
 .main-post_content {
   position: relative;
+  transition: all 0.3s;
+}
+.main-post_content:hover {
+  opacity: 0.5;
 }
 .main-post_content img {
   border-radius: 24px;
@@ -929,6 +942,7 @@ find a cat
 .main-post_text h2 {
   font-size: 28px;
   margin-bottom: 20px;
+  color: #2C2C2C;
 }
 .main-post_text p {
   font-size: 14px;
@@ -996,6 +1010,10 @@ find a cat
   margin-top: 48px;
   height: 226px;
   position: relative;
+  transition: all 0.3s;
+}
+.article:hover {
+  opacity: 0.5;
 }
 .article::after {
   content: "";
@@ -1031,6 +1049,7 @@ find a cat
   color: #5D5D5D;
 }
 .article-info h3 {
+  color: #2C2C2C;
   margin-top: 12px;
   font-size: 20px;
 }
@@ -1047,6 +1066,10 @@ find a cat
   height: 311px;
   margin-bottom: 72px;
   position: relative;
+  transition: all 0.3s;
+}
+.pikup-item:hover {
+  opacity: 0.5;
 }
 .pikup-item::after {
   content: "";
@@ -1071,6 +1094,7 @@ find a cat
   height: 184px;
 }
 .pikup-item ul li h3 {
+  color: #2C2C2C;
   margin-top: 24px;
   margin-bottom: 13px;
 }
@@ -1104,6 +1128,10 @@ find a cat
 }
 
 /* blog-detail */
+.blog-detail > .main-post_content:hover {
+  opacity: 1;
+}
+
 .blog-detail > .aside-bg {
   height: 3230px;
 }
