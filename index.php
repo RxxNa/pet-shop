@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-
-  <title>CAT BELL</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header_inner">
-      <a href="#"><img src="images/home/logo.svg" alt="ロゴ"></a>
-      <nav>
-        <ul>
-          <li><a href="#">猫を探す</a></li>
-          <li><a href="#">お店を探す</a></li>
-          <li><a href="#">ブログ一覧</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<?php get_header(); ?>
 
   <main>
     <div class="bg"></div>
@@ -72,35 +45,35 @@
         <div class="home_find_list">
           <ul>
             <li><a href="#">
-                <img src="/images/typeList/4columns/01.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/typeList/4columns/01.png" alt="">
                 <h3>スコティッシュフォールド</h3>
               </a></li>
             <li><a href="#">
-                <img src="/images/typeList/4columns/01.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/typeList/4columns/01.png" alt="">
                 <h3>スコティッシュフォールド</h3>
               </a></li>
             <li><a href="#">
-                <img src="/images/typeList/4columns/01.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/typeList/4columns/01.png" alt="">
                 <h3>スコティッシュフォールド</h3>
               </a></li>
             <li><a href="#">
-                <img src="/images/typeList/4columns/01.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/typeList/4columns/01.png" alt="">
                 <h3>スコティッシュフォールド</h3>
               </a></li>
             <li><a href="#">
-                <img src="/images/typeList/4columns/01.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/typeList/4columns/01.png" alt="">
                 <h3>スコティッシュフォールド</h3>
               </a></li>
             <li><a href="#">
-                <img src="/images/typeList/4columns/01.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/typeList/4columns/01.png" alt="">
                 <h3>スコティッシュフォールド</h3>
               </a></li>
             <li><a href="#">
-                <img src="/images/typeList/4columns/01.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/typeList/4columns/01.png" alt="">
                 <h3>スコティッシュフォールド</h3>
               </a></li>
             <li><a href="#">
-                <img src="/images/typeList/4columns/01.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/typeList/4columns/01.png" alt="">
                 <h3>スコティッシュフォールド</h3>
               </a></li>
           </ul>
@@ -150,28 +123,28 @@
         <ul class="home-blog_list">
           <li>
             <a href="#">
-              <img src="images/blog/00.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/blog/00.jpg" alt="">
               <p>猫にまつわるヒーリング効果とは！？プレゼントキャンペーンも実施中♪</p>
               <time>2022.00.00</time>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/blog/00.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/blog/00.jpg" alt="">
               <p>猫にまつわるヒーリング効果とは！？プレゼントキャンペーンも実施中♪</p>
               <time>2022.00.00</time>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/blog/00.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/blog/00.jpg" alt="">
               <p>猫にまつわるヒーリング効果とは！？プレゼントキャンペーンも実施中♪</p>
               <time>2022.00.00</time>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/blog/00.jpg" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/blog/00.jpg" alt="">
               <p>猫にまつわるヒーリング効果とは！？プレゼントキャンペーンも実施中♪</p>
               <time>2022.00.00</time>
             </a>
@@ -192,7 +165,7 @@
         <div class="about-content">
           <div class="about-item">
             <div class="about-bg">
-              <img src="images/home/about_01.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/about_01.png" alt="">
             </div>
             <div class="about-text">
               <h2>ペットと人との笑顔ある未来の創造</h2>
@@ -205,21 +178,4 @@
     </section>
   </main>
 
-  <footer>
-    <div class="solid"></div>
-    <div class="footer">
-      <a href="#"><img src="images/home/logo.svg" alt="" class="footer-logo"></a>
-      <ul>
-        <li><a href="#">猫を探す</a></li>
-        <li><a href="#">お店を探す</a></li>
-        <li><a href="#">ブログ一覧</a></li>
-      </ul>
-    </div>
-    <p>&copy;2020-2022 CAT BELL Co., Ltd.</p>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="script.js"></script>
-</body>
-
-</html>
+  <?php get_footer(); ?>
